@@ -53,9 +53,7 @@ export default function ConstructionPage() {
                 incrível
                 <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-full"></div>
               </span>{" "}
-              para você.
-              <br />
-              Em breve estaremos no ar com novidades!
+              para você. Em breve estaremos no ar com novidades!
             </p>
           </div>
 
