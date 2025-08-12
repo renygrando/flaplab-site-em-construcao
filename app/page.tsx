@@ -19,10 +19,10 @@ export default function ConstructionPage() {
         <div className="absolute bottom-20 right-10 w-16 h-16 bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-full opacity-20 animate-glow"></div>
       </div>
 
-      <div className="relative z-10 min-h-screen flex flex-col items-center justify-center p-6">
-        <div className="max-w-4xl mx-auto text-center space-y-12">
+      <div className="relative z-10 min-h-screen flex items-center justify-center p-4">
+        <div className="max-w-2xl mx-auto text-center space-y-8">
           {/* Logo Section */}
-          <div className="space-y-8">
+          <div className="space-y-6">
             <div className="flex justify-center">
               <div className="relative group">
                 <Image
@@ -30,8 +30,8 @@ export default function ConstructionPage() {
                   alt="FLAPLAB Logo"
                   width={0}
                   height={0}
-                  sizes="(max-width: 768px) 90vw, (max-width: 1200px) 70vw, 60vw"
-                  className="w-auto max-w-full h-auto max-h-32 md:max-h-40 transition-transform duration-300 group-hover:scale-105"
+                  sizes="(max-width: 768px) 80vw, (max-width: 1200px) 60vw, 50vw"
+                  className="w-auto max-w-full h-auto max-h-20 sm:max-h-24 md:max-h-32 transition-transform duration-300 group-hover:scale-105"
                   priority
                 />
               </div>
@@ -39,46 +39,46 @@ export default function ConstructionPage() {
           </div>
 
           {/* Main Content */}
-          <div className="space-y-8">
-            <div className="space-y-6">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-800 font-display leading-tight">
+          <div className="space-y-6">
+            <div className="space-y-4">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-800 font-display leading-tight">
                 Site em Construção
               </h1>
-              <div className="w-24 h-1 bg-gradient-to-r from-yellow-400 to-yellow-500 mx-auto rounded-full"></div>
+              <div className="w-16 h-0.5 bg-gradient-to-r from-yellow-400 to-yellow-500 mx-auto rounded-full"></div>
             </div>
 
-            <p className="text-xl md:text-2xl text-slate-600 leading-relaxed max-w-2xl mx-auto font-light">
+            <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-lg mx-auto">
               Estamos trabalhando duro para trazer algo{" "}
               <span className="font-semibold text-slate-700 relative">
                 incrível
                 <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-full"></div>
               </span>{" "}
               para você.
-              <br className="hidden sm:block" />
+              <br />
               Em breve estaremos no ar com novidades!
             </p>
           </div>
 
           {/* Contact Section */}
-          <div className="space-y-8 pt-4">
-            <p className="text-lg text-slate-600 font-medium">Precisa entrar em contato? Clique no botão abaixo:</p>
+          <div className="space-y-6 pt-2">
+            <p className="text-sm sm:text-base text-slate-600">Precisa entrar em contato? Clique no botão abaixo:</p>
 
             <div className="flex justify-center">
               <a href="mailto:hello@flaplab.digital" className="group">
                 <Button
-                  size="lg"
-                  className="bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-slate-900 font-semibold px-8 py-4 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 cursor-pointer text-lg"
+                  size="default"
+                  className="bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-slate-900 font-semibold px-6 py-3 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 cursor-pointer text-sm sm:text-base"
                 >
-                  <Mail className="w-5 h-5 mr-3" />
+                  <Mail className="w-4 h-4 mr-2" />
                   Entrar em Contato
-                  <ArrowRight className="w-5 h-5 ml-3 transition-transform duration-300 group-hover:translate-x-1" />
+                  <ArrowRight className="w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" />
                 </Button>
               </a>
             </div>
           </div>
 
           {/* Footer */}
-          <div className="pt-16 text-slate-500 text-sm">
+          <div className="pt-8 text-slate-500 text-xs sm:text-sm">
             <p>© 2025 FLAPLAB. Todos os direitos reservados.</p>
           </div>
         </div>
