@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { Mail, ArrowRight } from "lucide-react"
+import { Mail, ArrowRight, MessageCircle } from "lucide-react"
 import Image from "next/image"
 
 export default function ConstructionPage() {
@@ -61,7 +61,7 @@ export default function ConstructionPage() {
           <div className="space-y-6 pt-2">
             <p className="text-sm sm:text-base text-slate-600">Precisa entrar em contato? Clique no botão abaixo:</p>
 
-            <div className="flex justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a href="mailto:hello@flaplab.digital" className="group">
                 <Button
                   size="default"
@@ -72,12 +72,41 @@ export default function ConstructionPage() {
                   <ArrowRight className="w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" />
                 </Button>
               </a>
+
+              <a href="https://wa.me/5511989129962" target="_blank" rel="noopener noreferrer" className="group">
+                <Button
+                  size="default"
+                  className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-semibold px-6 py-3 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 cursor-pointer text-sm sm:text-base"
+                >
+                  <MessageCircle className="w-4 h-4 mr-2" />
+                  WhatsApp
+                  <ArrowRight className="w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" />
+                </Button>
+              </a>
             </div>
           </div>
 
-          {/* Footer */}
-          <div className="pt-8 text-slate-500 text-xs sm:text-sm">
-            <p>© 2025 FLAPLAB. Todos os direitos reservados.</p>
+          <div className="pt-12 space-y-4">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center text-slate-600 text-sm">
+              <a
+                href="mailto:hello@flaplab.digital"
+                className="flex items-center gap-2 hover:text-yellow-600 transition-colors"
+              >
+                <Mail className="w-4 h-4" />
+                hello@flaplab.digital
+              </a>
+              <div className="hidden sm:block w-1 h-1 bg-slate-400 rounded-full"></div>
+              <a
+                href="https://wa.me/5511989129962"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 hover:text-green-600 transition-colors"
+              >
+                <MessageCircle className="w-4 h-4" />
+                +55 11 98912-9962
+              </a>
+            </div>
+            <p className="text-slate-500 text-xs sm:text-sm">© 2025 FLAPLAB. Todos os direitos reservados.</p>
           </div>
         </div>
       </div>
